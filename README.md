@@ -43,8 +43,6 @@ or
 npm run start
 ```
 
-and then open browser and navigate to `localhost:9000`
-
 ### Production
 
 ```
