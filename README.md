@@ -28,10 +28,11 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - TypeScript
+- Jest
 - [React](https://reactjs.org/) - JS library
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) - Unit tests
 - [Cypress](https://www.cypress.io/) - E2E tests
-- OOP (Object-oriented programming)
+- Functional Programming
 
 ## Available Scripts
 
