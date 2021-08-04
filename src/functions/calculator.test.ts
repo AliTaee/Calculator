@@ -1,4 +1,4 @@
-import { operationType } from '../model/calculator'
+import { operationType } from 'model/calculator'
 import {
   sumNumbers,
   subtractNumbers,

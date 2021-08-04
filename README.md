@@ -25,7 +25,6 @@ Users should be able to:
 - CSS variables
 - SCSS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - TypeScript
 - Jest
@@ -51,3 +50,8 @@ yarn build
 or
 npm run build
 ```
+
+### Useful resources
+
+- [CSS flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - A Complete Guide to Flexbox
+- [Absolute imports in Create React App](https://dev.to/mr_frontend/absolute-imports-in-create-react-app-3ge8)

@@ -1,4 +1,4 @@
-import { operationType, numberType } from '../model/calculator'
+import { operationType, numberType } from 'model/calculator'
 
 function sumNumbers(number1: numberType, number2: numberType) {
   return number1 + number2
