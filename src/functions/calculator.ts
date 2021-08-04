@@ -1,4 +1,4 @@
-import { operationType, numberType } from '../model/calc'
+import { operationType, numberType } from '../model/calculator'
 
 function sumNumbers(number1: numberType, number2: numberType) {
   return number1 + number2
@@ -16,7 +16,7 @@ function divisionNumbers(number1: numberType, number2: numberType) {
   return number1 / number2
 }
 
-function delNumber(number: numberType) {
+function deleteNumber(number: numberType) {
   return Math.floor(number / 10)
 }
 
@@ -24,7 +24,7 @@ function numPad(currentNumber: numberType, number: numberType) {
   return Number(`${currentNumber}${number}`)
 }
 
-function calc(
+function calculator(
   preNumber: numberType,
   newNumber: numberType,
   operation: operationType,
@@ -45,7 +45,7 @@ function calc(
       result = divisionNumbers(preNumber, newNumber)
       break
     case 'del':
-      result = delNumber(preNumber)
+      result = deleteNumber(preNumber)
       break
     case 'reset':
       result = 0
@@ -61,10 +61,10 @@ function calc(
 
 export {
   numPad,
-  delNumber,
   sumNumbers,
+  deleteNumber,
   divisionNumbers,
   subtractNumbers,
   multiplicationNumbers,
 }
-export default calc
+export default calculator

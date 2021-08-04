@@ -1,13 +1,13 @@
-import { operationType } from '../model/calc'
+import { operationType } from '../model/calculator'
 import {
   sumNumbers,
   subtractNumbers,
   multiplicationNumbers,
   divisionNumbers,
-  delNumber,
+  deleteNumber,
   numPad,
-} from './calc'
-import calc from './calc'
+} from './calculator'
+import calculator from './calculator'
 
 describe('Test sum functionality', () => {
   test.each([
@@ -57,7 +57,7 @@ describe('Test delete number functionality', () => {
     [871, 87],
     [4521, 452],
   ])('%i delete => %i', (num1, result) => {
-    expect(delNumber(num1)).toBe(result)
+    expect(deleteNumber(num1)).toBe(result)
   })
 })
 
@@ -82,6 +82,6 @@ describe('Test calc functionality', () => {
     [1234, 0, 'del', 123],
     [1234, 0, 'reset', 0],
   ])('%i %i with operation %j = %i', (num1, num2, operation, result) => {
-    expect(calc(num1, num2, operation as operationType)).toBe(result)
+    expect(calculator(num1, num2, operation as operationType)).toBe(result)
   })
 })
